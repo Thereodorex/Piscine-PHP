@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="../css/carousel.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body id="admin-page">
+    <nav>
+        <div class="left-side">
+            <div class="nav-item">
+                <a href="../index.php">
+                Главная
+            </a>
+            </div>
+            <div class="nav-item">
+                <a href="goods.html">
+                Товары
+            </a>
+            </div>
+            <div class="nav-item">
+                <a href="categories.html">
+                Категории
+            </a>
+            </div>
+            <div class="nav-item">
+                <a href="users.html">
+                Пользователи
+            </a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="nav-item">
+                <a class="logout">
+                Выйти
+            </a>
+            </div>
+        </div>
+    </nav>
+    <main class="transactions">
+        <h1>Админка</h1>
+        <h2 class="light">Список транзакций пользователей</h2>
+        <hr>
+        <div class="transaction-item header">
+            <div class="id">ID</div>
+            <div class="user-id">user_id</div>
+            <div class="comment">commentary</div>
+            <div class="status">status</div>
+            <div class="payment">payment</div>
+        </div>
+        <div class="transactions-list">
+        </div>
+        <hr>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
