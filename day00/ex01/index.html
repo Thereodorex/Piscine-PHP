@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mendel</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	h1 {
+		position: absolute;
+		top: 200px;
+		left: 550px;
+		color: white;
+	}
+	body {
+		background: url("http://www.fullhdwpp.com/wp-content/uploads/breaking-bad-looking-behind-1728x1080.jpg?x69613");
+	}
+	table {
+		position: absolute;
+		top: 350px;
+		left: 450px;
+		color: white;
+	}
+	td {
+		width: 45px;
+	}
+	.name {
+		text-align: center;
+	}
+	.number {
+		text-align: left;
+	}
+	.weight {
+		text-align: right;
+	}
+	.void {
+		height: 100%;
+		text-align: center;
+		padding-top: 30px;
+	}
+	.block {
+		height: 95%;
+		text-align: center;
+	}
+	.cor {
+		background-color: darkorange;
+	}
+	.ctur {
+		background-color: darkturquoise;
+	}
+	.cgr {
+		background-color: darkgray;
+	}
+	.corch {
+		background-color: mediumorchid;
+	}
+	.cmag {
+		background-color: darkmagenta;
+	}
+	.tcor {
+		color: darkorange;
+	}
+	.tctur {
+		color: darkturquoise;
+	}
+	.tcgr {
+		color: darkgray;
+	}
+	.tcorhc {
+		color: mediumorchid;
+	}
+	.tcmag {
+		color: darkmagenta;
+	}
+	</style>
+</head>
+<body>
+	<h1>Periodic table of the elements</h1>
+	<table>
+		<tr>
+			<td>
+				<p class="void">1</p>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+				<p class="void">18</p>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td class="cor">
+				<p class="weight"><small>1,01</small></p>
+				<p class="name"><b>H</b></p>
+				<p class="number"><small>1</small></p>
+			</td>
+			<td>
+				<p class="void">2</p>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+				<p class="void">13</p>
+			</td>
+			<td>
+				<p class="void">14</p>
+			</td>
+			<td>
+				<p class="void">15</p>
+			</td>
+			<td>
+				<p class="void">16</p>
+			</td>
+			<td>
+				<p class="void">17</p>
+			</td>
+			<td class="cor">
+				<p class="weight"><small>4,01</small></p>
+				<p class="name"><b>He</b></p>
+				<p class="number"><small>2</small></p>
+			</td>
+			<td>
+				<p class="period">1</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="cor">
+				<p class="weight"><small>6,97</small></p>
+				<p class="name"><b>Li</b></p>
+				<p class="number"><small>3</small></p>
+			</td>
+			<td class="cor">
+				<p class="weight"><small>9,01</small></p>
+				<p class="name"><b>Be</b></p>
+				<p class="number"><small>4</small></p>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>10,81</small></p>
+				<p class="name"><b>B</b></p>
+				<p class="number"><small>5</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>12,01</small></p>
+				<p class="name"><b>C</b></p>
+				<p class="number"><small>6</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>14,01</small></p>
+				<p class="name"><b>N</b></p>
+				<p class="number"><small>7</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>15,99</small></p>
+				<p class="name"><b>O</b></p>
+				<p class="number"><small>8</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>18,99</small></p>
+				<p class="name"><b>F</b></p>
+				<p class="number"><small>9</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>20,18</small></p>
+				<p class="name"><b>Ne</b></p>
+				<p class="number"><small>10</small></p>
+			</td>
+			<td>
+				<p class="period">2</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="cor">
+				<p class="weight"><small>22,99</small></p>
+				<p class="name"><b>Na</b></p>
+				<p class="number"><small>11</small></p>
+			</td>
+			<td class="cor">
+				<p class="weight"><small>24,3</small></p>
+				<p class="name"><b>Mg</b></p>
+				<p class="number"><small>12</small></p>
+			</td>
+			<td>
+			</td>
+			<td>
+				<p class="void">3</p>
+			</td>
+			<td>
+				<p class="void">4</p>
+			</td>
+			<td>
+				<p class="void">5</p>
+			</td>
+			<td>
+				<p class="void">6</p>
+			</td>
+			<td>
+				<p class="void">7</p>
+			</td>
+			<td>
+				<p class="void">8</p>
+			</td>
+			<td>
+				<p class="void">9</p>
+			</td>
+			<td>
+				<p class="void">10</p>
+			</td>
+			<td>
+				<p class="void">11</p>
+			</td>
+			<td>
+				<p class="void">12</p>
+			</td>
+			<td class="cmag">
+				<p class="weight"><small>26,98</small></p>
+				<p class="name"><b>Al</b></p>
+				<p class="number"><small>13</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>28,08</small></p>
+				<p class="name"><b>Si</b></p>
+				<p class="number"><small>14</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>30,97</small></p>
+				<p class="name"><b>P</b></p>
+				<p class="number"><small>15</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>32,07</small></p>
+				<p class="name"><b>S</b></p>
+				<p class="number"><small>16</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>35,45</small></p>
+				<p class="name"><b>Cl</b></p>
+				<p class="number"><small>17</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>39,95</small></p>
+				<p class="name"><b>Ar</b></p>
+				<p class="number"><small>18</small></p>
+			</td>
+			<td>
+				<p class="period">3</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="cor">
+				<p class="weight"><small>39,1</small></p>
+				<p class="name"><b>K</b></p>
+				<p class="number"><small>19</small></p>
+			</td>
+			<td class="cor">
+				<p class="weight"><small>40,08</small></p>
+				<p class="name"><b>Ca</b></p>
+				<p class="number"><small>1</small></p>
+			</td>
+			<td>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>44,96</small></p>
+				<p class="name"><b>Sc</b></p>
+				<p class="number"><small>21</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>47,87</small></p>
+				<p class="name"><b>Ti</b></p>
+				<p class="number"><small>22</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>50,94</small></p>
+				<p class="name"><b>V</b></p>
+				<p class="number"><small>23</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>51,99</small></p>
+				<p class="name"><b>Cr</b></p>
+				<p class="number"><small>24</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>54,94</small></p>
+				<p class="name"><b>Mn</b></p>
+				<p class="number"><small>25</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>55,845</small></p>
+				<p class="name"><b>Fe</b></p>
+				<p class="number"><small>26</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>58,93</small></p>
+				<p class="name"><b>Co</b></p>
+				<p class="number"><small>27</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>58,69</small></p>
+				<p class="name"><b>Ni</b></p>
+				<p class="number"><small>28</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>63,55</small></p>
+				<p class="name"><b>Cu</b></p>
+				<p class="number"><small>29</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>65,38</small></p>
+				<p class="name"><b>Zn</b></p>
+				<p class="number"><small>30</small></p>
+			</td>
+			<td class="cmag">
+				<p class="weight"><small>69,72</small></p>
+				<p class="name"><b>Ga</b></p>
+				<p class="number"><small>31</small></p>
+			</td>
+			<td class="cmag">
+				<p class="weight"><small>72,63</small></p>
+				<p class="name"><b>Ge</b></p>
+				<p class="number"><small>32</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>74,92</small></p>
+				<p class="name"><b>As</b></p>
+				<p class="number"><small>33</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>78,98</small></p>
+				<p class="name"><b>Se</b></p>
+				<p class="number"><small>34</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>79,9</small></p>
+				<p class="name"><b>Br</b></p>
+				<p class="number"><small>35</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>83,8</small></p>
+				<p class="name"><b>Kr</b></p>
+				<p class="number"><small>36</small></p>
+			</td>
+			<td>
+				<p class="period">4</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="cor">
+				<p class="weight"><small>85,47</small></p>
+				<p class="name"><b>Rb</b></p>
+				<p class="number"><small>37</small></p>
+			</td>
+			<td class="cor">
+				<p class="weight"><small>87,62</small></p>
+				<p class="name"><b>Sr</b></p>
+				<p class="number"><small>38</small></p>
+			</td>
+			<td>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>88,91</small></p>
+				<p class="name"><b>Y</b></p>
+				<p class="number"><small>39</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>91,22</small></p>
+				<p class="name"><b>Zr</b></p>
+				<p class="number"><small>40</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>92,91</small></p>
+				<p class="name"><b>Nb</b></p>
+				<p class="number"><small>41</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>95,95</small></p>
+				<p class="name"><b>Mo</b></p>
+				<p class="number"><small>42</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>98</small></p>
+				<p class="name"><b>Tc</b></p>
+				<p class="number"><small>43</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>101,07</small></p>
+				<p class="name"><b>Ru</b></p>
+				<p class="number"><small>44</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>102,91</small></p>
+				<p class="name"><b>Rh</b></p>
+				<p class="number"><small>45</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>106,42</small></p>
+				<p class="name"><b>Pd</b></p>
+				<p class="number"><small>46</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>107,87</small></p>
+				<p class="name"><b>Ag</b></p>
+				<p class="number"><small>47</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>112,41</small></p>
+				<p class="name"><b>Cd</b></p>
+				<p class="number"><small>48</small></p>
+			</td>
+			<td class="cmag">
+				<p class="weight"><small>114,81</small></p>
+				<p class="name"><b>In</b></p>
+				<p class="number"><small>49</small></p>
+			</td>
+			<td class="cmag">
+				<p class="weight"><small>118,71</small></p>
+				<p class="name"><b>Sn</b></p>
+				<p class="number"><small>50</small></p>
+			</td>
+			<td class="cmag">
+				<p class="weight"><small>121,76</small></p>
+				<p class="name"><b>Sb</b></p>
+				<p class="number"><small>51</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>127,6</small></p>
+				<p class="name"><b>Te</b></p>
+				<p class="number"><small>52</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>126,9</small></p>
+				<p class="name"><b>I</b></p>
+				<p class="number"><small>53</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>131,29</small></p>
+				<p class="name"><b>Xe</b></p>
+				<p class="number"><small>54</small></p>
+			</td>
+			<td>
+				<p class="period">5</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="cor">
+				<p class="weight"><small>132,91</small></p>
+				<p class="name"><b>Cs</b></p>
+				<p class="number"><small>55</small></p>
+			</td>
+			<td class="cor">
+				<p class="weight"><small>137,33</small></p>
+				<p class="name"><b>Ba</b></p>
+				<p class="number"><small>56</small></p>
+			</td>
+			<td colspan="2" class="cgr">
+				<p class="name"><b>La - Lu</b></p>
+				<p class="number"><small>57-71</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>178,49</small></p>
+				<p class="name"><b>Hf</b></p>
+				<p class="number"><small>72</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>180,95</small></p>
+				<p class="name"><b>Ta</b></p>
+				<p class="number"><small>73</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>183,84</small></p>
+				<p class="name"><b>W</b></p>
+				<p class="number"><small>74</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>186,2</small></p>
+				<p class="name"><b>Re</b></p>
+				<p class="number"><small>75</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>190,23</small></p>
+				<p class="name"><b>Os</b></p>
+				<p class="number"><small>76</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>192,22</small></p>
+				<p class="name"><b>Ir</b></p>
+				<p class="number"><small>77</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>195,08</small></p>
+				<p class="name"><b>Pt</b></p>
+				<p class="number"><small>78</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>196,97</small></p>
+				<p class="name"><b>Au</b></p>
+				<p class="number"><small>79</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>200,59</small></p>
+				<p class="name"><b>Hg</b></p>
+				<p class="number"><small>80</small></p>
+			</td>
+			<td class="cmag">
+				<p class="weight"><small>204,38</small></p>
+				<p class="name"><b>Tl</b></p>
+				<p class="number"><small>81</small></p>
+			</td>
+			<td class="cmag">
+				<p class="weight"><small>207,2</small></p>
+				<p class="name"><b>Pb</b></p>
+				<p class="number"><small>82</small></p>
+			</td>
+			<td class="cmag">
+				<p class="weight"><small>208,98</small></p>
+				<p class="name"><b>Bi</b></p>
+				<p class="number"><small>83</small></p>
+			</td>
+			<td class="cmag">
+				<p class="weight"><small>209</small></p>
+				<p class="name"><b>Po</b></p>
+				<p class="number"><small>84</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>210</small></p>
+				<p class="name"><b>At</b></p>
+				<p class="number"><small>85</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>222</small></p>
+				<p class="name"><b>Rn</b></p>
+				<p class="number"><small>86</small></p>
+			</td>
+			<td>
+				<p class="period">6</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="cor">
+				<p class="weight"><small>223</small></p>
+				<p class="name"><b>Fr</b></p>
+				<p class="number"><small>87</small></p>
+			</td>
+			<td class="cor">
+				<p class="weight"><small>226</small></p>
+				<p class="name"><b>Ra</b></p>
+				<p class="number"><small>88</small></p>
+			</td>
+			<td colspan="2" class="cgr">
+				<p class="name"><b>Ac - Lr</b></p>
+				<p class="number"><small>89 - 103</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>261</small></p>
+				<p class="name"><b>Rf</b></p>
+				<p class="number"><small>104</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>268</small></p>
+				<p class="name"><b>Db</b></p>
+				<p class="number"><small>105</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>271</small></p>
+				<p class="name"><b>Sg</b></p>
+				<p class="number"><small>106</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>272</small></p>
+				<p class="name"><b>Bh</b></p>
+				<p class="number"><small>107</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>270</small></p>
+				<p class="name"><b>Hs</b></p>
+				<p class="number"><small>108</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>276</small></p>
+				<p class="name"><b>Mt</b></p>
+				<p class="number"><small>109</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>281</small></p>
+				<p class="name"><b>Ds</b></p>
+				<p class="number"><small>110</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>280</small></p>
+				<p class="name"><b>Rg</b></p>
+				<p class="number"><small>111</small></p>
+			</td>
+			<td class="ctur">
+				<p class="weight"><small>285</small></p>
+				<p class="name"><b>Cn</b></p>
+				<p class="number"><small>112</small></p>
+			</td>
+			<td class="cmag">
+				<p class="weight"><small>284</small></p>
+				<p class="name"><b>Nh</b></p>
+				<p class="number"><small>113</small></p>
+			</td>
+			<td class="cmag">
+				<p class="weight"><small>289</small></p>
+				<p class="name"><b>Fl</b></p>
+				<p class="number"><small>114</small></p>
+			</td>
+			<td class="cmag">
+				<p class="weight"><small>288</small></p>
+				<p class="name"><b>Mc</b></p>
+				<p class="number"><small>115</small></p>
+			</td>
+			<td class="cmag">
+				<p class="weight"><small>293</small></p>
+				<p class="name"><b>Lv</b></p>
+				<p class="number"><small>116</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>292</small></p>
+				<p class="name"><b>Ts</b></p>
+				<p class="number"><small>117</small></p>
+			</td>
+			<td class="corch">
+				<p class="weight"><small>294</small></p>
+				<p class="name"><b>Og</b></p>
+				<p class="number"><small>118</small></p>
+			</td>
+			<td>
+				<p class="period">7</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="block tcor"><small>s-block</small></p>
+			</td>
+			<td>
+			</td>
+			<td>
+				<p class="block tcgr"><small>f-block</small></p>
+			</td>
+			<td>
+			</td>
+			<td>
+				<p class="block tctur"><small>d-block</small></p>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+				<p class="block tcmag"><small>p-block</small></p>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+				<p class="block tcmag"><small>Metals</small></p>
+			</td>
+			<td class="cbl" colspan="2">
+				<p class="block tcmag"><small>Nonmetals</small></p>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>138,91</small></p>
+				<p class="name"><b>La</b></p>
+				<p class="number"><small>57</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>140,11</small></p>
+				<p class="name"><b>Ce</b></p>
+				<p class="number"><small>58</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>140,91</small></p>
+				<p class="name"><b>Pr</b></p>
+				<p class="number"><small>59</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>144,24</small></p>
+				<p class="name"><b>Nd</b></p>
+				<p class="number"><small>60</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>145</small></p>
+				<p class="name"><b>Pm</b></p>
+				<p class="number"><small>61</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>150,36</small></p>
+				<p class="name"><b>Sm</b></p>
+				<p class="number"><small>62</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>151,96</small></p>
+				<p class="name"><b>Eu</b></p>
+				<p class="number"><small>63</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>157,25</small></p>
+				<p class="name"><b>Gd</b></p>
+				<p class="number"><small>64</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>158,93</small></p>
+				<p class="name"><b>Tb</b></p>
+				<p class="number"><small>65</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>162,5</small></p>
+				<p class="name"><b>Dy</b></p>
+				<p class="number"><small>66</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>164,93</small></p>
+				<p class="name"><b>Ho</b></p>
+				<p class="number"><small>67</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>167,26</small></p>
+				<p class="name"><b>Er</b></p>
+				<p class="number"><small>68</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>168,93</small></p>
+				<p class="name"><b>Tm</b></p>
+				<p class="number"><small>69</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>173,05</small></p>
+				<p class="name"><b>Yb</b></p>
+				<p class="number"><small>70</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>174,97</small></p>
+				<p class="name"><b>Lu</b></p>
+				<p class="number"><small>71</small></p>
+			</td>
+			<td>
+				<p class="period">6</p>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+
+		</tr>
+		<tr>
+			<td>
+			<td>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>227</small></p>
+				<p class="name"><b>Ac</b></p>
+				<p class="number"><small>89</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>232,04</small></p>
+				<p class="name"><b>Th</b></p>
+				<p class="number"><small>90</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>231,04</small></p>
+				<p class="name"><b>Pa</b></p>
+				<p class="number"><small>91</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>238,03</small></p>
+				<p class="name"><b>U</b></p>
+				<p class="number"><small>92</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>237</small></p>
+				<p class="name"><b>Np</b></p>
+				<p class="number"><small>93</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>244</small></p>
+				<p class="name"><b>Pu</b></p>
+				<p class="number"><small>94</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>243</small></p>
+				<p class="name"><b>Am</b></p>
+				<p class="number"><small>95</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>247</small></p>
+				<p class="name"><b>Cm</b></p>
+				<p class="number"><small>96</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>247</small></p>
+				<p class="name"><b>Bk</b></p>
+				<p class="number"><small>97</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>251</small></p>
+				<p class="name"><b>Cf</b></p>
+				<p class="number"><small>98</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>252</small></p>
+				<p class="name"><b>Es</b></p>
+				<p class="number"><small>99</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>257</small></p>
+				<p class="name"><b>Fm</b></p>
+				<p class="number"><small>100</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>258</small></p>
+				<p class="name"><b>Md</b></p>
+				<p class="number"><small>101</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>259</small></p>
+				<p class="name"><b>No</b></p>
+				<p class="number"><small>102</small></p>
+			</td>
+			<td class="cgr">
+				<p class="weight"><small>262</small></p>
+				<p class="name"><b>Lr</b></p>
+				<p class="number"><small>103</small></p>
+			</td>
+			<td>
+				<p class="period">7</p>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
