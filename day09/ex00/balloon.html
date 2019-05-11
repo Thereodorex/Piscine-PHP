@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <style>
+        .baloon
+        {
+            margin-top: 300px;
+            margin-left: 300px;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: red;
+        }
+    </style>
+    <head>
+    </head>
+    <body>
+        <div class="baloon"></div>
+        <script>
+                var colors = new Array('red', 'green', 'blue');
+                var size = 200;
+    
+                window.onload = function()
+                {
+                    document.getElementsByClassName("baloon")[0].addEventListener("click", exhale);
+                    document.getElementsByClassName("baloon")[0].addEventListener("mouseout", movout);
+                }
+    
+                function apply()
+                {
+                    if (size > 420 || size < 200)
+                        size = 200;
+                    document.getElementsByClassName("baloon")[0].style.height = size + 'px';
+                    document.getElementsByClassName("baloon")[0].style.width = size + 'px';
+                }
+    
+                function exhale()
+                {
+                    colors.push(colors.shift());
+                    document.getElementsByClassName("baloon")[0].style.backgroundColor = colors[0];
+                    size += 10;
+                    apply();
+                }
+    
+                function movout()
+                {
+                    size -= 5;
+                    apply();
+                }
+        </script>
+    </body>
+</html>

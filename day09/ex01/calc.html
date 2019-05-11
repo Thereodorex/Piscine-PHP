@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <style>
+    </style>
+    <head>
+    </head>
+    <body>
+        <div>
+            <form id="myForm" onsubmit="calc()">
+                <input type="text" value=">=0">
+                <select>
+                    <option value="+">+</option>
+					<option value="-">-</option>
+					<option value="*">*</option>
+					<option value="/">/</option>
+					<option value="%">%</option>
+                </select>
+                <input type="text" value=">=0">
+                <input type="submit" value="Try me!">
+            </form>
+        </div>
+        <script>
+            window.onload = setTimeout(hey, 30000);
+            function calc()
+            {
+                res = doop();
+                alert(res);
+                console.log(res);
+            }
+
+            function doop()
+            {
+                var x = document.getElementById("myForm").elements;
+                var n1 = parseInt(x[0].value, 10);
+                var op = x[1].value;
+                var n2 = parseInt(x[2].value, 10);
+                if (n1 < 0 || n2 < 0)
+                    return '’Error :(';
+                if ((op == '/' || op == '%') && n2 == 0)
+                    return 'It’s over 9000!';
+                if (op == '+')
+                    return n1 + n2;
+                else if (op == '-')
+                    return n1 - n2;
+                else if (op == '*')
+                    return n1 * n2;
+                else if (op == '/')
+                    return n1 / n2;
+                else
+                    return n1 % n2;
+            }
+            function hey()
+            {
+                alert('Please, use me...');
+                setTimeout(hey, 30000);
+            }
+        </script>
+    </body>
+</html>

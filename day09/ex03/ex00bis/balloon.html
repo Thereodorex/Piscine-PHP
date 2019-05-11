@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <style>
+        #baloon
+        {
+            margin-top: 300px;
+            margin-left: 300px;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: red;
+        }
+    </style>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                var colors = new Array('red', 'green', 'blue');
+                var size = 200;
+
+                function apply()
+                {
+                    if (size > 420 || size < 200)
+                        size = 200;
+                    $("#baloon").css('width', size + 'px');
+                    $("#baloon").css('height', size + 'px');
+                }
+
+                $("#baloon").click(function(){
+                    colors.push(colors.shift());
+                    $(this).css('backgroundColor', colors[0]);
+                    size += 10;
+                    apply();
+                });
+
+                $("#baloon").mouseleave(function(){
+                    size -= 5;
+                    apply();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="baloon"></div>
+    </body>
+</html>

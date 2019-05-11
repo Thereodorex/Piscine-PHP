@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <style>
+    </style>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <form>
+                <input id='num1' type="text" value=">=0">
+                <select id='op'>
+                    <option value="+">+</option>
+					<option value="-">-</option>
+					<option value="*">*</option>
+					<option value="/">/</option>
+					<option value="%">%</option>
+                </select>
+                <input id='num2' type="text" value=">=0">
+                <input id='sub' type="submit" value="Try me!">
+            </form>
+        </div>
+        <script>
+            $(document).ready(function(){setTimeout(hey, 30000);});
+
+            $("#sub").click(function(){
+                var n1 = parseInt($("#num1").val());
+                var n2 = parseInt($("#num2").val());
+                var op = $('#op').val();
+                var res;
+                if (n1 < 0 || n2 < 0)
+                    res = '’Error :(';
+                else if ((op == '/' || op == '%') && n2 == 0)
+                    res = 'It’s over 9000!';
+                else if (op == '+')
+                    res = n1 + n2;
+                else if (op == '-')
+                    res = n1 - n2;
+                else if (op == '*')
+                    res = n1 * n2;
+                else if (op == '/')
+                    res = n1 / n2;
+                else
+                    res = n1 % n2;
+                alert(res);
+                console.log(res);
+            });
+
+            function hey()
+            {
+                alert('Please, use me...');
+                setTimeout(hey, 30000);
+            }
+        </script>
+    </body>
+</html>
