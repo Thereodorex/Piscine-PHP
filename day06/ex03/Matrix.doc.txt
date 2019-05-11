@@ -1,0 +1,25 @@
+
+<- Matrix —--------------------------------------------------------------------
+• The identity matrix
+• The translation matrices ("translate") • The scale change matrices ("scale")
+• The rotation matrices ("rotate")
+• the projection matrices ("project")
+
+Your Matrix Class must have seven Class constants: IDENTITY, SCALE, RX, RY, RZ, TRANSLATION and PROJECTION.
+The Class’ constructor is waiting for an array. The following keys are required:
+’preset’: the matrix type to, mandatory. The value must be one of the Class constants previoulsy defined.
+’scale’: the scale factor, mandatory when ’preset’ is worth SCALE.
+’angle’: the rotation angle in radians, mandatory when ’preset’ is worth RX, RY
+or RZ.
+’vtc’: translation vector, mandatory when ’preset’ is worth TRANSLATION.
+’fov’: projection field of view in degree s mandatory when’preset’is worth PROJECTION. ’ratio’: projected image ratio, mandatory when ’preset’ is worth PROJECTION. ’near’: projection’snear clipping plane mandatory when’preset’is worth PROJECTION. ’far’: projection’s far clipping plane mandatory when’preset’is worth PROJECTION.
+The Class must include a Boolean static attribute called verbose to control the displays related to the use of the Class. This attribute is initially False.
+The Matrix Class must have a __toString method. See example output for for- matting.
+If and only if the static attribute verbose is true, then the Class constructor and destructor will produce an output. See example output for formatting.
+The Class must propose a doc static method returning a short documentation of the class in a string. The content of the documentation must be read from a Matrix.doc.txt file and is left to your discretion as stipulated in previous exercises.
+Methods from the Matrix Class should never modify the current instance. Once a matrix is instantiated, its status is final.
+The organization and the code of the Matrix Class are up to you. Be smart, efficient and clean. Be careful with the visibility.
+• Your Matrix Class must have at least the following public methods. If some of them seem too difficult to code you’re probably on the wrong track.
+Matrix mult( Matrix $rhs ) : returns the multiplication of both matrices. Vertex transformVertex( Vertex $vtx ) : returns a new vertex resulting from
+the transformation of the vertex by the matrix.
+--------------------------------------------------------------------— Matrix ->

@@ -1,0 +1,8 @@
+<- Vertex —--------------------------------------------------------------------
+Your documentation here.
+x - the x position coord;
+y - the y position coord;
+z - the z position coord;
+Color - color of the point;
+w - for multiplication convenience;
+--------------------------------------------------------------------— Vertex ->

@@ -1,0 +1,16 @@
+<- Vector —--------------------------------------------------------------------
+x - the x position coord;
+y - the y position coord;
+z - the z position coord;
+Color - color of the point;
+w - for multiplication convenience;
+magnitude() - length of the vector;
+normalize() - divide every coord by the length;
+add() - summing up;
+sub() - subtraction;
+opposite() - -1 multiplication;
+dotProduct() - scalar mult;
+cos() - cosin;
+crossProduct() - vector mult;
+scalarProduct() - vector * scalar;
+--------------------------------------------------------------------— Vector ->

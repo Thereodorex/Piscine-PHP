@@ -1,0 +1,27 @@
+
+<- Camera ----------------------------------------------------------------------
+ratio : The final image ratio, meaning the ratio between the image’s width and height.
+You have heard of 16:9 or 4:3 aspect ration? Well these are image ratios.
+fov : The field of view of the projected image in degrees. Look for "3D field of view" on
+the Internet if you want to learn more. In practice 60 degrees is a correct arbitrary
+value. It roughly corresponds to the angle between your nose and both edges of the
+screen of your computer right now. We will be able to modify this value if we want
+to see a more or less big part of the scene.
+near : The near clipping plane. This concept a little more difficult, to understand. It is
+the distance of the camera from which an object is seen. Google will explain this
+much better.
+far : The far clipping plane. For those interested these two planes enable us to calculate
+the Z-buffer of a scene, a concept outside the scope of these exercises.
+
+’origin’: The vertex positioning the camera in the world mark. Thanks to this
+vertex, we can compute a vector and then a translation matrix.
+’orientation’: Rotation matrix orienting the camera in the world mark.
+’width’: Width in pixel of the desired image. Is used to compute the ratio. Not
+compatible with the ’ratio’ key.
+’height’: Height in pixel of the desired image. Is used to compute the ratio. Not
+compatible with the ’ratio’ key.
+’ratio’: Image’s ratio. Not compatible with the ’width’ and ’height’ keys.
+’fov’ : The projected image’s field of view in in degree.
+’near’ : The near clipping plane.
+’far’ : The far clipping plane.
+---------------------------------------------------------------------- Camera ->
