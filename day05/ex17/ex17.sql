@@ -1,0 +1,1 @@
+SELECT COUNT(*) AS `nb_sucs`, FLOOR(AVG(`price`)) AS `av_sucs`, (SUM(`duration_sub`) % 42) AS `ft` FROM subscription;
